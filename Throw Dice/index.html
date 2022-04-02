@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="dice()">Through Dice</button>
+    <h1></h1>
+</body>
+</html>
+<script>
+ function dice(){
+    var a = document.querySelector("h1");
+    var b = Math.floor(Math.random()*7);
+    a.innerHTML = b;
+    if(b==6){
+        a.style.color="green";
+    }
+    else if (b==0){
+        a.style.color="yellow";
+    }
+    else {
+        a.style.color="red";
+    }
+    
+ }
+</script>
