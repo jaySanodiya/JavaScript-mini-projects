@@ -1,0 +1,35 @@
+#nav{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+    gap: 30px;
+    border: 2px solid;
+}
+button {
+    border: 0px;
+    background-color: white;
+    font-size: 18px;
+}
+
+#login-form-div {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-align: center;
+    width: 250px;
+    height: 250px;
+    margin: 150px auto;
+    padding: 10px;
+}
+#login-form-div >form > input {
+    width: 90%;
+    margin: 10px;
+    height: 25px;
+}
+#login-form-div >form > input:last-child {
+    background-color: rgb(35, 176, 35);
+    color: white;
+    padding:5px 15px;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+}

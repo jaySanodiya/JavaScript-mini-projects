@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #body {
+            text-align: center;
+        }
+        .name, .num, .city {
+            display: flex;
+            justify-content: center;
+            gap: 200px;
+        }
+        input {
+            margin-top: 15px;
+            font-size: large;
+            height: 30px;
+            width: 300px;
+        }
+        .city > input {
+            margin-left: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div id="body">
+        <h1>Application Form</h1>
+        <form>
+            <div class="name">
+                <h2>Student's Name</h2>
+                <input type="text">
+            </div>
+            <div class="num">
+                <h2>Mobile Number</h2>
+                <input type="number">
+            </div>
+            <div class="city">
+                <h2>City</h2>
+                <input type="text">
+            </div>
+            <div class="btn">
+                <input type="submit" id="butn">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",run);
+    var arr = JSON.parse(localStorage.getItem("CnstFtn"))||[];
+    function run(event){
+        event.preventDefault();
+        var a = document.querySelector(".name > input").value;
+        var b = document.querySelector(".num > input").value;
+        var c = document.querySelector(".city > input").value;
+        
+        function StudentConstructor(a,b,c) {
+                this.Name = a,
+                this.Number = b,
+                this.City = c
+            }
+        
+        var Student = new StudentConstructor(a,b,c);
+            arr.push(Student);
+        localStorage.setItem("CnstFtn",JSON.stringify(arr));
+    }
+  
+
+</script>

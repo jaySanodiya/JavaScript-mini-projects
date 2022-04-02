@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+<style>
+  #main{
+        column-count: 3;
+        width: 90%;
+        margin:30px auto;
+    }
+    #main div{
+        margin: 10px;
+    }
+    #main div img {
+        width: 100%;
+    }
+    #head{
+      text-align: center;
+      color: white;
+      font-size: xxx-large;
+      background-color: rgba(50, 65, 3, 0.91);
+    }
+</style>
+  <body>
+    <h1 id="head">hello</h1>
+    <div id="main">
+      <!--No need to add sidebar here, directly display search results here only-->
+    </div>
+  </body>
+</html>
+<script type="module">
+  import {extractData, appendData } from ".//scripts/main.js";
+  var x = JSON.parse(localStorage.getItem("details"));
+  console.log(x);
+  var y = localStorage.getItem("Value");
+  let api = `https://api.unsplash.com/search/photos/?query=${y}&client_id=Zlel4Oze9IXYUTSi823jM2bDN9ZxGQA4jShL_LfS2Tg`;
+  let data =await extractData(api);
+  console.log(data);
+  let parent = document.querySelector("#main");
+  appendData(data.results,parent);
+  document.querySelector("#head").innerHTML= "Result is : " + y; 
+</script>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+    }
+    #container {
+        text-align: center;
+        margin: 40px;
+    }
+    #container > select {
+        margin-right: 100px;
+    }
+    #img {
+        display: flex;
+        justify-content: center;
+    }
+    #img img {
+        margin: 20px;
+    }
+    #name {
+        margin: 40px;
+    }
+</style>
+<body>
+    <h1>Wellcome to McDonald's</h1>
+    <div id="container">
+        <select>
+            <option value="ATB">McAloo Tikki Burger</option>
+            <option value="VB">McVeggie Burger</option>
+            <option value="SCB">McSpicy Chicken Burger</option>
+            <option value="CB">McChicken Burger</option>
+            <option value="BSCW">Big Spicy Chicken Wrap</option>
+        </select>
+        <button onclick="Order()">Order Food</button>
+    </div>
+    <div id="img">
+        <img src="https://images.mcdelivery.co.in/hardcastle-restaurants-pvt-ltd/image/upload/v1591261933/NewWebsiteResource2020/Assets/Img/Logo.svg" alt="">
+        <div id="name">
+            <p></p>
+            <h2></h2>
+            <h3></h3>
+        </div>
+    </div>
+</body>
+</html>
+<script src="index.js"></script>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1 {
+        text-align: center;
+        font-size: 75px;
+        margin-top: 0;
+        font-style: italic;
+    }
+    #container {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-row-gap: 20px;
+    }
+    #container img {
+        width: 95%;
+    }
+    #container p {
+        font-size: xx-large;
+    }
+    #container h5{
+        font-size:large;
+        color: red;
+    }
+    #container h3{
+        font-size:large;
+        margin: 30px 25px 0 10px  ;
+    }
+    #container h4 {
+        padding: 10px;
+        visibility: hidden;
+    }
+    #container div:hover h4 {
+        padding: 10px;
+        visibility: visible;
+    }
+    #container div:hover{
+        z-index: 2;
+        transform: scale(1.1);
+    }
+    .release {
+        display: flex;
+        
+    }
+</style>
+<body>
+    <h1>Tranding Movies</h1>
+    <div id="container">
+        
+    </div>
+</body>
+</html>
+<script src="trending.js"></script>

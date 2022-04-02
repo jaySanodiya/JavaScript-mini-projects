@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        table{
+            background-color: rgb(151, 165, 42);
+            width:450px;
+            text-align: left;
+            line-height: 30px;
+            margin-left: 35%;
+        }
+        thead {
+            font-size: x-large;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student's Data</h1>
+    <table>
+        <thead>
+            <td>Sr.No</td>
+            <td>Name</td>
+            <td>Number</td>
+            <td>City</td>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
+<script>
+    var arr= JSON.parse(localStorage.getItem("CnstFtn"));
+    var count =0;
+    arr.map(function(elem){
+        count++;
+        var row = document.createElement("tr");
+        var srNo = count;
+        var l1 = document.createElement("th");
+        l1.textContent=elem.Name;
+        var l2 = document.createElement("th");
+        l2.textContent=elem.Number;
+        var l3 = document.createElement("th");
+        l3.textContent=elem.City;
+        row.append(srNo,l1,l2,l3);
+        document.querySelector("tbody").append(row);
+    })
+</script>

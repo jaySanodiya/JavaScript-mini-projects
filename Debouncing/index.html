@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color:rgb(237, 239, 243);
+    }
+    h1 {
+        text-align: center;
+    }
+    #nav {
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        margin: 50px auto ;
+        width: 80%;
+        height: 80px;
+    }
+    input {
+        margin: 20px 30px;
+        height: 40%;
+        width: 70%;
+    }
+    button{
+        margin: 20px 10px;
+        color: rgb(52, 18, 188);
+        background-color: rgb(48, 229, 39);
+        border: 3px solid pink;
+    }
+    #container{
+        margin: 0px 100px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 5%;
+    }
+    #container > div {
+        margin-top: 50px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        width: 300px;
+    }
+
+    #container > div > img {
+        width: 90%;
+        margin: 5%;
+    }
+    #container > div:hover{
+        transform: scale(1.2);
+    }
+    p {
+        width: 90%;
+        text-align: left;
+        margin-left: 5%;
+    }
+    h4 {
+        width: 90%;
+        text-align: left;
+        margin-left: 5%;
+        color: red;
+    }
+    #eee{
+        text-align: left;
+        /* color:seashell;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        padding: 10px;
+        background-color: rgb(12, 24, 43); */
+        /* width: 30%; */
+        margin: auto;
+    }
+</style>
+<body>
+      <h1>आइये पधारिये आपका स्वागत है !</h1>
+    <div id="nav">
+        <input id="inp" type="text" placeholder="यह नाम लिखो मूवी का !">
+        <button onclick="ShuruKaro()"><i class="fas fa-search fa-2x"></i></button>
+    </div>
+    <div id="container">
+    </div>
+    <div id="eee">
+        <img style="width: 90%; margin: 15px 15px ;" src="https://img.search.brave.com/khlf5IPapMEFcFF267w7vHG_LYLG6Zti3jEHIhnRAz0/rs:fit:1200:768:1/g:ce/aHR0cHM6Ly93d3cu/aW5kaWEtZm9ydW1z/LmNvbS9ib2xseXdv/b2QvaW1hZ2VzL3Vw/bG9hZHMvNDliMjk4/YTItMmI3NC00MWRh/LWIzNDgtMThhZjE1/NzBhYzZhX01lZGl1/bS5qcGc" alt="">
+    </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/629044acfa.js" crossorigin="anonymous"></script>
+<script src="index.js"></script>

@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    margin: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+h1 {
+    font-size: xxx-large;
+    margin: 20px;
+    color: red;
+}
+.left {
+    border: 5px solid blue;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 10px;
+    width: 500px;
+    height: 500px;
+    margin:20px 50px;
+}
+h2{
+    margin: 20px;
+    color: rgb(18, 133, 12);
+}
+.left img {
+    width: 500px;
+}
+.right {
+    margin: 0 40px;
+}
+.ingredient{
+    margin: auto 20px;
+}
+p {
+    margin: 20px;
+}
+
+#bucket {
+    display: grid;
+    padding: 50px;
+    width: 1130px;
+    margin: auto;
+    grid-gap: 40px;
+    grid-template-columns: repeat(3,1fr);
+}
+#bucket .box1 {
+    height: 450px;
+    width: 350px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#bucket .box1 img {
+    height: 350px;
+
+}
+#bucket .box1 p{
+    font-size: x-large;
+    padding: 10px;
+    color: rgb(112, 10, 163);
+}
